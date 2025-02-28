@@ -2,10 +2,27 @@ POST http://localhost:3333/subscriptions
 Content-Type: application/json
 
 {
-  "name": "Paulo Victor",
-  "email": "villo@rocketseat.com.br"
+  "name": "John Doe",
+  "email": "random@example.com",
+  "referrer": "85a0bfde-f354-4fcc-9205-ecdc8f74aae3"
 }
 
 ###
 
-GET http://localhost:3333/invites/villo123
+GET http://localhost:3333/invites/85a0bfde-f354-4fcc-9205-ecdc8f74aae3
+
+###
+
+GET http://localhost:3333/subscribers/85a0bfde-f354-4fcc-9205-ecdc8f74aae3/ranking/clicks
+
+###
+
+GET http://localhost:3333/subscribers/85a0bfde-f354-4fcc-9205-ecdc8f74aae3/ranking/count
+
+###
+
+GET http://localhost:3333/subscribers/85a0bfde-f354-4fcc-9205-ecdc8f74aae3/ranking/position
+
+###
+
+GET http://localhost:3333/ranking
