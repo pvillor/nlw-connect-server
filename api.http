@@ -26,3 +26,12 @@ GET http://localhost:3333/subscribers/85a0bfde-f354-4fcc-9205-ecdc8f74aae3/ranki
 ###
 
 GET http://localhost:3333/ranking
+
+###
+
+POST http://localhost:3333/messages
+Content-Type: application/json
+
+{
+  "message": "Me diga o nome dos usuários que não conseguiram convidar ninguém no evento."
+}
